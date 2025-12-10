@@ -8,6 +8,11 @@ Download the latest release for linux, unzip it and then run the executables ins
 Download the latest release for windows, unzip it and then run the .exe files inside it
 
 ## How to build it yourself
+First clone the repo to get the code which you will build.
+```bash
+git clone <copy the link from the green code button>
+```
+Then move on to the next steps to build and run the individual files.
 ### For linux
 First install the raylib package from your package manager if available for your distribution,
 or download the latest release of raylib for linux and install on your computer from 
