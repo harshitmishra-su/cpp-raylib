@@ -1,4 +1,4 @@
-# raylib-cpp
+# cpp-raylib
 Some example programs using raylib in c++.
 
 ## How to use
