@@ -8,7 +8,7 @@ Download the latest release for your OS and then run the executables inside it a
 
 ## How to build it yourself  
 
-*YOU NEED TO HAVE CMAKE AND MAKE AND A C++ COMPILER INSTALLED AND ALSO ZIG INSTALLED IF YOU WANT TO CROSS COMPILE FOR DIFFERENT OS'S*  
+*YOU NEED TO HAVE CMAKE, MAKE AND A C++ COMPILER INSTALLED AND ALSO ZIG INSTALLED IF YOU WANT TO CROSS COMPILE FOR DIFFERENT OS'S*  
 
 1. Clone the repository
 2. Go to the project directory.  
