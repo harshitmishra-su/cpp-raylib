@@ -16,15 +16,15 @@ Download the latest release for your OS and then run the executables inside it a
 3. Build the .cpp file you want with cmake by providing it the source file name.
 
 ```bash
-cmake -B build -D SOURCE_FILE=<source_file>.cpp
+cmake -B build -D SOURCE_FILE=<source_file>
 cmake --build build
 ```
 ### If you want to build it for a different OS
 
 ```bash
-cmake -B build -D SOURCE_FILE=<source_file>.cpp -D TARGET=<target_triplet_of_the_os_you_want_to_build_for>
+cmake -B build -D SOURCE_FILE=<source_file> -D TARGET=<target_triplet_of_the_os_you_want_to_build_for>
 cmake --build build
 ```
-*TARGET TRIPLET*
-FOR WINDOWS - x86_64-windows-gnu
-FOR LINUX - x86_64-linux-musl
+*TARGET TRIPLET*   
+For Windows - x86_64-windows-gnu   
+For Linux - x86_64-linux-musl   
