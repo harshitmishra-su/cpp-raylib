@@ -1,47 +1,30 @@
 # cpp-raylib
+
 Some example programs using raylib in c++.
 
 ## How to use
-### For linux
-Download the latest release for linux, unzip it and then run the executables inside it.
-### For windows
-Download the latest release for windows, unzip it and then run the .exe files inside it
 
-## How to build it yourself
-First clone the repo to get the code which you will build.
-```bash
-git clone <copy the link from the green code button>
-```
-Then move on to the next steps to build and run the individual files.
-### For linux
-First install the raylib package from your package manager if available for your distribution,
-or download the latest release of raylib for linux and install on your computer from 
-(https://github.com/raysan5/raylib) if not available.
-#### For Fedora or similar distributions
-```bash
-sudo dnf install raylib-devel
-sudo dnf install gcc_c++ #to install the g++ compiler
-```
-#### For Debian/Ubuntu or similar distributions
-```bash
-sudo add-apt-repository ppa:texus/raylib
-sudo apt update
-sudo apt install libraylib5-dev
-sudo apt install build-essential
-```
-Compile and run using
-```bash
-g++ <source> -o <executable> -lraylib
-./<executable>
-```
-### For windows
-Download the latest release of raylib for windows from (https://github.com/raysan5/raylib),
-unzip it, then place the include and lib folders inside it at say, C:\include and C:\lib,
-respectively.
+Download the latest release for your OS and then run the executables inside it after unzipping it.
 
-Then, compile and run the files
-```powershell
-g++ <source> -o <executable> -IC:\include -LC:\lib -lraylib -lopengl32 -lgdi32 -lwinmm
-./<executable>
+## How to build it yourself  
+
+*YOU NEED TO HAVE CMAKE AND MAKE AND A C++ COMPILER INSTALLED AND ALSO ZIG INSTALLED IF YOU WANT TO CROSS COMPILE FOR DIFFERENT OS'S*  
+
+1. Clone the repository
+2. Go to the project directory.  
+   All the programs are inside the src/ directory.
+3. Build the .cpp file you want with cmake by providing it the source file name.
+
+```bash
+cmake -B build -D SOURCE_FILE=<source_file>.cpp
+cmake --build build
 ```
-Thank you for checking this repository out.
+### If you want to build it for a different OS
+
+```bash
+cmake -B build -D SOURCE_FILE=<source_file>.cpp -D TARGET=<target_triplet_of_the_os_you_want_to_build_for>
+cmake --build build
+```
+*TARGET TRIPLET*
+FOR WINDOWS - x86_64-windows-gnu
+FOR LINUX - x86_64-linux-musl
